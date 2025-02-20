@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Artículos</title>
+</head>
+<body>
+    <h2>Calculadora de Artículos</h2>
+    <form action="/calcularArticulos" method="post">
+        <div>
+            <label for="costo">Costo del Artículo (en colones):</label>
+            <input type="number" id="costo" name="costo" required/>
+        </div>
+
+        <div>
+            <label for="porcentajeGanancia">Porcentaje de Ganancia (%):</label>
+            <input type="number" id="porcentajeGanancia" name="porcentajeGanancia" required/>
+        </div>
+
+        <div>
+            <label for="aplicaImpuestoVentas">¿Aplica Impuesto de Ventas?</label>
+            <input type="checkbox" id="aplicaImpuestoVentas" name="aplicaImpuestoVentas"/>
+        </div>
+
+        <div>
+            <label for="impuestoVentas">Porcentaje de Impuesto de Ventas (%):</label>
+            <input type="number" id="impuestoVentas" name="impuestoVentas"/>
+        </div>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>

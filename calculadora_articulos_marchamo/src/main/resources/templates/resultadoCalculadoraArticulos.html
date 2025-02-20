@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado Calculadora de Artículos</title>
+</head>
+<body>
+    <h1>Resultado de la Calculadora de Artículos</h1>
+
+    <p>Costo del artículo: <span th:text="${costo}"></span> colones</p>
+    <p>Monto de ganancia: <span th:text="${montoGanancia}"></span> colones</p>
+
+    <p th:if="${montoImpuestoVentas != null}">Impuesto de ventas: <span th:text="${montoImpuestoVentas}"></span> colones</p>
+
+    <p>Precio final: <span th:text="${precioFinal}"></span> colones</p>
+</body>
+</html>

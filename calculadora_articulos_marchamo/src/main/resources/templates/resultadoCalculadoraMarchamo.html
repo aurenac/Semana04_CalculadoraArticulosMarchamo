@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado Calculadora Marchamo</title>
+</head>
+
+<body>
+    <div>
+        <label><strong>Detalle:</strong></label>
+    </div>
+    <br>
+    <div>
+        <label>Valor fiscal del vehículo: </label>
+        <span th:text="${valorFiscal}"></span><label> colones.</label>
+    </div>
+    <div>
+        <label>Porcentaje de cobro: </label>
+        <span th:text="${porcentajeCobro}"></span><label>%</label>
+    </div>
+    <div>
+        <label>Seguro INS: 5%</label>
+    </div>
+    <div>
+        <label>El usuario: </label>
+        <span th:text="${conoceFigueres}"></span><label> conoce a Figueres.</label>
+    </div>
+    <div>
+        <label>Nota: Si el usuario conoce a Figueres se agregó un 10% de impuesto adicional sobre el porcentaje de cobro.</label>
+    </div>
+    <br>
+    <div>
+        <label>Monto a pagar del marchamo: </label>
+        <span th:text="${resultadoMarchamo}"></span><label> colones.</label>
+    </div>
+</body>
+
+</html>

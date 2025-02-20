@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Marchamo</title>
+</head>
+
+<body>    
+    <div>
+        <h1>Calculadora de marchamo</h1>
+        <form th:action="@{/calcularMarchamo}" method="post" autocomplete="off">
+            <div>
+                <label for="valorFiscal">Valor fiscal del vehículo</label>
+                <input type="number" valorFiscal="valorFiscal" name="valorFiscal" placeholder="Valor fiscal">
+            </div>
+            </br>
+            <div>
+                <label for="tipoVehiculo">Tipo de vehículo</label>
+                <select id="tipoVehiculo" name=tipoVehiculo>
+                    <option value="CL">Carga Liviana (CL)</option>
+                    <option value="AB">Autobús (AB)</option>
+                    <option value="MT">Motos (MT)</option>
+                </select>
+            </div>
+            </br>
+            <div>
+                <label for="conoceFigueres">¿Conoce a Figueres?</label>
+                <select id="conoceFigueres" name=conoceFigueres>
+                    <option value="Sí">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            </br>
+            </br>
+            <div>
+                <button type="submit">
+                    Calcular
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>   
